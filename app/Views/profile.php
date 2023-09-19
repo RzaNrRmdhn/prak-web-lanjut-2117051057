@@ -21,17 +21,17 @@
                 </span>
             </div>
             <div class="mt-6 w-fit mx-auto">
-                <img src="<?php echo base_url('/assets/Mina.png'); ?>" class="rounded-full w-28 " alt="profile picture" srcset="">
+                <img src="<?php echo base_url('/assets/img/Mina.png'); ?>" class="rounded-full w-28 " alt="profile picture" srcset="">
             </div>
 
             <div class="mt-8 text-center">
-                <h2 class="text-white font-bold text-2l tracking-wide">Reza Nur Ramadhan</h2>
+                <h2 class="text-white font-bold text-2l tracking-wide"><?php echo $nama ?></h2>
             </div>
             <div class="mt-2 text-center">
-                <h2 class="text-white font-bold text-2l tracking-wide">2117051057</h2>
+                <h2 class="text-white font-bold text-2l tracking-wide"><?php echo $npm ?></h2>
             </div>
             <p class="text-center text-emerald-400 font-semibold mt-2.5" >
-                Kelas D
+                Kelas <?php echo $kelas ?>
             </p>
 
             <div class="h-1 w-full bg-black mt-8 rounded-full">
