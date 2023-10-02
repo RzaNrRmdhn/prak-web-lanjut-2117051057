@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
+<?= $this->extend('layouts/app') ?>
+
+<?= $this->section('content') ?>
     <center>
         <div class="w-full max-w-xs">
         <?php $nama_kelas = session()->getFlashdata('nama_kelas'); ?>
@@ -23,7 +14,7 @@
                     <?= validation_show_error('nama') ?>
                 </div>
             </div>
-    
+
             <div class="mb-6">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="kelas">
                 Kelas
@@ -41,7 +32,7 @@
                 ?>
             </select>
             </div>
-    
+
             <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="npm">
                 Npm
@@ -51,7 +42,7 @@
                     <?= validation_show_error('nama') ?>
                 </div> 
             </div>
-    
+
             <div class="flex items-center justify-between">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                 Create User
@@ -66,5 +57,4 @@
         </p>
         </div>
     </center>
-</body>
-</html>
+<?= $this->endSection() ?>

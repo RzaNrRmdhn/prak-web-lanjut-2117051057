@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
+<?=$this->extend('layouts/app');?>
+<?=$this->section('content');?>
     <section style="font-family: Montserrat" class=" bg-[#071e34] flex font-medium items-center justify-center h-screen">
         <section class="w-64 mx-auto bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg">
             <div class="flex items-center justify-between">
@@ -43,10 +33,6 @@
             </div>
         </section>
     </section>
-</body>
-</html>
-
-
-<!-- component -->
+<?=$this->endSection();?>
 
 
