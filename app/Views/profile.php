@@ -11,17 +11,20 @@
                 </span>
             </div>
             <div class="mt-6 w-fit mx-auto">
-                <img src="<?php echo base_url('/assets/img/Mina.png'); ?>" class="rounded-full w-28 " alt="profile picture" srcset="">
+                <img src="<?php echo $user['foto'] ?? '<default-foto>' ?>" class="rounded-full w-28 " alt="profile picture" width="100" height="100">
             </div>
 
             <div class="mt-8 text-center">
-                <h2 class="text-white font-bold text-2l tracking-wide"><?php echo $nama ?></h2>
+                <h2 class="text-white font-bold text-2l tracking-wide"><?php echo $user['nama'] ?></h2>
             </div>
             <div class="mt-2 text-center">
-                <h2 class="text-white font-bold text-2l tracking-wide"><?php echo $npm ?></h2>
+                <h2 class="text-white font-bold text-2l tracking-wide"><?php echo $user['npm'] ?></h2>
             </div>
             <p class="text-center text-emerald-400 font-semibold mt-2.5" >
-                Kelas <?php echo $kelas ?>
+                Kelas <?php echo $user['nama_kelas'] ?>
+            </p> 
+            <p class="text-center text-emerald-400 font-semibold mt-2.5" >
+                Id Data Ke- <?php echo $user['id'] ?>
             </p>
 
             <div class="h-1 w-full bg-black mt-8 rounded-full">
