@@ -4,7 +4,7 @@
     <center>
         <div class="w-full max-w-xs">
         <?php $nama_kelas = session()->getFlashdata('nama_kelas'); ?>
-        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="<?= base_url('/user/store') ?>" method="post">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="<?= base_url('/user/store') ?>" method="post" enctype="multipart/form-data">
             <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="nama">
                 Username
@@ -41,6 +41,13 @@
                 <div class="invalid-feedback">
                     <?= validation_show_error('nama') ?>
                 </div> 
+            </div>
+
+            <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="npm">
+                Foto
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="file" name="foto" id="foto">
             </div>
 
             <div class="flex items-center justify-between">
