@@ -26,7 +26,5 @@ class KelasSeeder extends Seeder
         $kelasModel->save([
             'nama_kelas' => 'D'
         ]);
-
-
     }
 }
